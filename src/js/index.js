@@ -1,7 +1,9 @@
 import './materialize.min';
-import './init';
 import '../css/materialize.min.css';
+import '../css/style.scss';
 import * as pages from "./pages";
 
 const app = document.querySelector('.root');
-app.append(pages.auth());
+app.append(pages.startPage());
+const tabs = document.querySelector('.tabs');
+M.Tabs.init(tabs);
