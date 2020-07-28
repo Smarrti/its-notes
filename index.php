@@ -37,6 +37,8 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: *');
 header("Content-Type: application/json");
 
+include_once 'functions.php';
+
 $url = explode('/',$_SERVER['REQUEST_URI']);
 $formData = getFormData();
 $method = $_SERVER['REQUEST_METHOD'];
